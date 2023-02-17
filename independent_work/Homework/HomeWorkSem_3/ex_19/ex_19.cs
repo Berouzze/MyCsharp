@@ -10,7 +10,7 @@ int GetNumber(string text)
 
 string PolidromFiveSize(int numb)
 {
-    if (numb< 100000 && numb> 9999)
+    if (numb< 100000 && numb> 9999 || numb > -100000 && numb < -9999)
     {
         int a = numb/10000;
         int b = (numb/1000)%10;
