@@ -5,10 +5,13 @@ Console.Write("Введи целове число: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
 int thirdNumber = 0;
-
+int myNumber(int x)
+{
+    return (x / 100)%10;
+}
 if (number>99 || number<-99) 
 {
-    thirdNumber = (number / 100)%10;
+    thirdNumber = myNumber(number);
     Console.Write(thirdNumber);
 }
 else 
