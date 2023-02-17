@@ -62,3 +62,14 @@ System.Console.WriteLine(Print(numbers));
 // Коля
 //\
 
+/*double CybeCycleFromOneToN(int numb)
+{
+    double y = 0;
+    for  (int x = 0; x < numb; x++)
+    {
+        
+        y =  Math.Pow(Convert.ToDouble(x),3);  
+    }
+    return y;
+}
+*/
