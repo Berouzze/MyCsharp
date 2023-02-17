@@ -5,8 +5,8 @@
 // Ввод числа
 int GetNumber(string text)
 {
- System.Console.WriteLine(text);
- return Convert.ToInt32(Console.ReadLine());
+    System.Console.WriteLine(text);
+    return Convert.ToInt32(Console.ReadLine());
 }
 // Ввод координат
 void Coordinates(int[] array, int[] array2)
@@ -35,7 +35,7 @@ void Coordinates(int[] array, int[] array2)
 // Создание массива
 int[] CreateArray(int size)
 {
- return new int[size];
+    return new int[size];
 }
 // Вычисление расстояния
 double Distance(int[] array, int[] array2)
