@@ -12,7 +12,7 @@ int GetNumber(string text)
 void Coordinates(int[] array, int[] array2)
 {   
     int lengthArray = array.Length+array2.Length;
-    for (int count = 0, secondCount = 0, countDown = 3; count < lengthArray;)
+    for (int count = 0, secondCount = 0, countDown = array.Length; count < lengthArray;)
     {
         if (count < countDown)
         {
