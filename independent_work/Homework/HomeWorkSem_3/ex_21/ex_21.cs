@@ -40,8 +40,8 @@ int[] CreateArray(int size)
 // Вычисление расстояния
 double Distance(int[] array, int[] array2)
 {
-    double I = Math.Sqrt(Math.Pow(Convert.ToDouble(array2[0] - array[0]), 2) + Math.Pow(Convert.ToDouble(array2[1] - array[1]), 2) +
-    Math.Pow(Convert.ToDouble(array2[2] - array[2]), 2));
+    double I = Math.Sqrt(Math.Pow((array2[0] - array[0]), 2) + Math.Pow((array2[1] - array[1]), 2) +
+    Math.Pow((array2[2] - array[2]), 2));
     return I;
 }
 int size = 3;
