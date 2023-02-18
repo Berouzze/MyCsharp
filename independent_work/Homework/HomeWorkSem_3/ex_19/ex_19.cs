@@ -12,12 +12,12 @@ string PolidromFiveSize(int numb)
 {
     if (numb < 100000 && numb > 9999 || numb > -100000 && numb < -9999)
     {
-        int a = numb / 10000;
-        int b = (numb / 1000) % 10;
-        int c = (numb / 10) % 10;
-        int d = numb % 10;
+        int firstDigit = numb / 10000;
+        int secondDigit = (numb / 1000) % 10;
+        int thirdDigit = (numb / 10) % 10;
+        int fourthDigit = numb % 10;
 
-        if (a == d && b == c)
+        if (firstDigit == fourthDigit && secondDigit == thirdDigit)
         {
             return "Введенное число " + numb + " палиндром";
         }

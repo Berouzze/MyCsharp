@@ -10,24 +10,25 @@ int GetNumber(string text)
 }
 // Ввод координат
 void Coordinates(int[] array, int[] array2)
-{
-    for (int x = 0, y = 0; x < 6;)
+{   
+    int lengthArray = array.Length+array2.Length;
+    for (int count = 0, secondCount = 0, countDown = 3; count < lengthArray;)
     {
-        if (x < 3)
+        if (count < countDown)
         {
-            foreach (char c in "XYZ")
+            foreach (char readСoordinate in "XYZ")
             {
-                array[x] = GetNumber("Введите координату " + c + " первой точки: ");
-                x++;
+                array[count] = GetNumber("Введите координату " + readСoordinate + " первой точки: ");
+                count++;
             }
         }
         else
         {
-            foreach (char c in "XYZ")
+            foreach (char readСoordinate in "XYZ")
             {
-                array2[y] = GetNumber("Введите координату " + c + " второй точки: ");
-                x++;
-                y++;
+                array2[secondCount] = GetNumber("Введите координату " + readСoordinate + " второй точки: ");
+                count++;
+                secondCount++;
             }
         }
     }
@@ -40,9 +41,9 @@ int[] CreateArray(int size)
 // Вычисление расстояния
 double Distance(int[] array, int[] array2)
 {
-    double I = Math.Sqrt(Math.Pow((array2[0] - array[0]), 2) + Math.Pow((array2[1] - array[1]), 2) +
+    double cordinatsDistans = Math.Sqrt(Math.Pow((array2[0] - array[0]), 2) + Math.Pow((array2[1] - array[1]), 2) +
     Math.Pow((array2[2] - array[2]), 2));
-    return I;
+    return cordinatsDistans;
 }
 int size = 3;
 int[] numbers = CreateArray(size);

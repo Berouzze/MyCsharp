@@ -17,10 +17,11 @@ void FillByUser(int[] array)
 {
     int size = array.Length;
 
-    for (int x = 0; x < size; x++)
+    for (int index = 0, value = 1; index < size; index++, value++)
     {
-
-        array[x] = Convert.ToInt32(Math.Pow(Convert.ToDouble(x), 3));
+        
+        array[index] = (int)(Math.Pow(value, 3));
+        
     }
 }
 
@@ -32,14 +33,14 @@ string Print(int[] array)
     int index = 0;
     while (index < len)
     {
-        result = result + " " + array[index];
+        result += " " + array[index];
         index++;
     }
     return result;
 }
 
 int size = GetNumber("Введите число: ");
-if (size > 0)  // Проверяем на условие от 1 до N
+if (size > 0)  // Проверяем на условие от 1 до N и ответ пользователю на ошибочный ввод
 {
     int[] numbers = CreateArray(size);
     FillByUser(numbers);
