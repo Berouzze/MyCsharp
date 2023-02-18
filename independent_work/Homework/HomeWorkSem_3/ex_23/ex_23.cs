@@ -4,23 +4,23 @@
 // 1. Создание массива
 int[] CreateArray(int size)
 {
- return new int[size];
+    return new int[size];
 }
 // 2. Ввод числа
 int GetNumber(string text)
 {
-     System.Console.WriteLine(text);
-     return Convert.ToInt32(Console.ReadLine());
+    System.Console.WriteLine(text);
+    return Convert.ToInt32(Console.ReadLine());
 }
 // 3. Заполнянем массив кубами чисел
 void FillByUser(int[] array)
 {
     int size = array.Length;
-    
-    for  (int x = 0; x < size; x++)
+
+    for (int x = 0; x < size; x++)
     {
-        
-        array[x] =  Convert.ToInt32(Math.Pow(Convert.ToDouble(x),3));  
+
+        array[x] = Convert.ToInt32(Math.Pow(Convert.ToDouble(x), 3));
     }
 }
 
@@ -29,12 +29,12 @@ string Print(int[] array)
 {
     string result = String.Empty;
     int len = array.Length;
-     int index = 0;
+    int index = 0;
     while (index < len)
-        {
-            result = result + " " + array[index];
+    {
+        result = result + " " + array[index];
         index++;
-        }
+    }
     return result;
 }
 
