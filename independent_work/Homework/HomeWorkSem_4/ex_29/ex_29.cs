@@ -18,28 +18,28 @@ int[] GreateArray(int size)
 // Заполнение массива в ручную
 void FillByUser(int[] array)
 {
- int size = array.Length;
+    int size = array.Length;
 
- int index = 0;
+    int index = 0;
 
- while (index < size)
- {
- array[index] = GetNumber("Введите " + index + " элемент: ");
- index++;
- }
+    while (index < size)
+    {
+        array[index] = GetNumber("Введите " + index + " элемент: ");
+        index++;
+    }
 }
 // Печать массива
 string Print(int[] array)
 {
- string result = String.Empty;
- int len = array.Length;
- int index = 0;
- while (index < len)
- {
- result = result + " " + array[index];
- index++;
- }
- return result;
+    string result = String.Empty;
+    int len = array.Length;
+    int index = 0;
+    while (index < len)
+    {
+        result = result + " " + array[index]; 
+        index++;
+    }
+    return result;
 }
 int sizeArray = GetNumber("Введите длину массива: ");
 int[] array = GreateArray(sizeArray);
