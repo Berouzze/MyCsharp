@@ -35,10 +35,10 @@ void FillByUser(double[] array)
 }
 double DifferenceOfNumber(double[] array)
 {
-        double min = array.Min();
-        double max = array.Max();
-        double difNumb = max - min;
-        return difNumb;
+    double min = array.Min();
+    double max = array.Max();
+    double difNumb = max - min;
+    return difNumb;
 }
 
 int sizeArray = GetNumber("Введите длину массива: ");
