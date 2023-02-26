@@ -47,3 +47,5 @@ int[] array = GreateArray(sizeArray);
 FillByRand(array);
 int sumNumb = SumNumber(array);
 System.Console.WriteLine(sumNumb);
+
+// Ограничил диапазон рандомных чисел от -100 до 101 для удобства
