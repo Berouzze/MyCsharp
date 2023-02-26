@@ -26,7 +26,7 @@ int NumberSize(int Number)
     int Numb = str.Length;
     return Numb;
 }
-
+// 4. Заполнение массива
 void FillByUser(int[] array, int Number)
 {
     string str = Convert.ToString(Number);
@@ -41,7 +41,7 @@ void FillByUser(int[] array, int Number)
     }
 }
 
-// 4. SumNumber 
+// 4. Вычисление суммы чисел массива 
 int SumNumber(int[] array)
 {
     int sum = 0;
@@ -52,7 +52,7 @@ int SumNumber(int[] array)
     }
     return sum;
 }
-int originalNumber = GetNumber("Введите число: ");
+int originalNumber = GetNumber("Введите целое положительно число: ");
 int size = NumberSize(originalNumber);
 int[] numbers = CreateArray(size);
 FillByUser(numbers, originalNumber);
