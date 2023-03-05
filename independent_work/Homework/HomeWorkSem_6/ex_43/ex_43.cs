@@ -12,8 +12,8 @@ double GetNumber(string text)
 }
 // Ввод координат
 void Coordinates(double[] array, double[] array2)
-{   
-    int lengthArray = array.Length+array2.Length;
+{
+    int lengthArray = array.Length + array2.Length;
     for (int count = 0, secondCount = 0, countDown = array.Length; count < lengthArray;)
     {
         if (count < countDown)
@@ -41,9 +41,9 @@ double[] CreateArray(int size)
     return new double[size];
 }
 // Вычисление расстояния
-string  Distance(double[] array, double[] array2)
+string Distance(double[] array, double[] array2)
 {
-    double x = -(array[0]-array2[0])/(array[1]-array2[1]);
+    double x = -(array[0] - array2[0]) / (array[1] - array2[1]);
     double y = (array[1] * x) + array[0];
     string text = ($"Пересечение в точке: ({x};{y})");
     return text;
