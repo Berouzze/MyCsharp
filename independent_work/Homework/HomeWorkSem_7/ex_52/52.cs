@@ -49,6 +49,5 @@ void AAColumn(int[,] array)
 int sizeM = GetNumber("Задайте двумерный массив размером m на n, m: ");
 int sizeN = GetNumber("n: ");
 int[,] numbers = CreateArray(sizeM, sizeN);
-
 FillByRand(numbers);
 AAColumn(numbers);
