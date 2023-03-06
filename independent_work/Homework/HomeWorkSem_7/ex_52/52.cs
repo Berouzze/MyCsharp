@@ -43,7 +43,7 @@ void AAColumn(int[,] array)
         {
             sum += array[index2, index];
         }
-        Console.Write($" {sum / array.GetLength(0)} ");
+        Console.Write($" {sum / array.GetLength(0)}    ");
     }
 }
 int sizeM = GetNumber("Задайте двумерный массив размером m на n, m: ");
