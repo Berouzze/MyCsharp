@@ -52,7 +52,7 @@ void FillByRand(double[,] array)
 
 void SearchArrayElements(double[,] array, int firstPos, int secondPos)
 {
-    if (firstPos < 0 | firstPos > array.GetLength(0) - 1 | secondPos < 0 | secondPos > array.GetLength(1) - 1)
+    if (firstPos < 0 || firstPos > array.GetLength(0) - 1 || secondPos < 0 || secondPos > array.GetLength(1) - 1)
     {
         Console.WriteLine("Элемент не существует");
     }

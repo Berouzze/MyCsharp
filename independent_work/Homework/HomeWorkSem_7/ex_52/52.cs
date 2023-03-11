@@ -34,7 +34,7 @@ void FillByRand(int[,] array)
     }
 
 }
-void AAColumn(int[,] array)
+void AaColumn(int[,] array)
 {
     for (int index = 0; index < array.GetLength(1); index++)
     {
@@ -50,4 +50,4 @@ int sizeM = GetNumber("Задайте двумерный массив разме
 int sizeN = GetNumber("n: ");
 int[,] numbers = CreateArray(sizeM, sizeN);
 FillByRand(numbers);
-AAColumn(numbers);
+AaColumn(numbers);
