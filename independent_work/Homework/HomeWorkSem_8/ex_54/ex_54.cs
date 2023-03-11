@@ -35,23 +35,23 @@ void FillByRand(int[,] array)
 // Сортировка строк массива
 void SortArray(int[,] arr)
 {
-    
-    for (int h = 0; h < arr.GetLength(0);h++)
-    {   
+
+    for (int h = 0; h < arr.GetLength(0); h++)
+    {
         int n = arr.GetLength(1);
         for (int i = 0; i < arr.GetLength(1) - 1; i++)
 
         {
             int imax = 0;
 
-            for (int j = 0; j < n; j++) if (arr[h,j] < arr[h,imax]) imax = j;
+            for (int j = 0; j < n; j++) if (arr[h, j] < arr[h, imax]) imax = j;
 
-            int c = arr[h,imax];
+            int c = arr[h, imax];
 
-            arr[h,imax] = arr[h,n - 1];
+            arr[h, imax] = arr[h, n - 1];
 
-            arr[h,n - 1] = c;
-            
+            arr[h, n - 1] = c;
+
             n--;
 
         }

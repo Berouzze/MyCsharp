@@ -20,13 +20,13 @@ int[,] GreateArray(int size, int size2)
 {
     return new int[size, size2];
 }
- int[] CreateSingleArray(int size)
-    {
+int[] CreateSingleArray(int size)
+{
     return new int[size];
-    }
+}
 // Заполнение массива рандомными  вещественными числами
 void FillByRand(int[,] array)
-{   
+{
     for (int index = 0; index < array.GetLength(0); index++)
     {
         for (int index2 = 0; index2 < array.GetLength(1); index2++)
@@ -36,16 +36,16 @@ void FillByRand(int[,] array)
         }
     }
 }
-int  MinSumArrayStrings(int[,] array)
+int MinSumArrayStrings(int[,] array)
 {
     int[] arr = CreateSingleArray(array.GetLength(0));
-    for (int  u = 0; u < array.GetLength(0); u++)
-    {   
+    for (int u = 0; u < array.GetLength(0); u++)
+    {
         int sum = 0;
         for (int i = 0; i < array.GetLength(1); i++)
         {
-            sum+= array[u,i];
-            arr[u]=sum;
+            sum += array[u, i];
+            arr[u] = sum;
         }
     }
     int minSum = arr.Min();
