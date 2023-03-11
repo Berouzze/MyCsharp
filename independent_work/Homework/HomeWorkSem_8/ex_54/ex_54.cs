@@ -32,6 +32,7 @@ void FillByRand(int[,] array)
 
     }
 }
+// Сортировка строк массива
 void SortArray(int[,] arr)
 {
     
