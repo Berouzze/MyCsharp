@@ -9,9 +9,9 @@ int GetNumber(string text)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-void AckermanFunction (int m, int n)
+void AckermanFunction(int m, int n)
 {
-    Console.Write ($"Ответ: {Ackermann (m, n)}"); 
+    Console.Write($"Ответ: {Ackermann(m, n)}");
 }
 
 int Ackermann(int m, int n)
