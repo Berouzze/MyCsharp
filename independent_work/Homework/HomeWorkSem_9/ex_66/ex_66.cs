@@ -17,7 +17,7 @@ void PrintSumNumbers(int numb, int secondNumb, int sum)
     sum += numb;
     if (numb == secondNumb)
     {
-        Console.Write($"{sum} ");
+        Console.WriteLine($"Ответ: {sum} ");
         return;
     }
 
