@@ -11,8 +11,8 @@ int GetNumber(string text)
 
 void PrintNumbers(int numb)
 {
-    if (numb < 0) { System.Console.WriteLine("Не натуральное число"); } 
-    if ( numb == 0) { return; }
+    if (numb < 0) { System.Console.WriteLine("Не натуральное число"); }
+    if (numb == 0) { return; }
     Console.Write($"{numb} ");
     PrintNumbers(numb - 1);
 }
