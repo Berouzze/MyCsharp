@@ -21,7 +21,7 @@ void PrintSumNumbers(int numb, int secondNumb, int sum)
         return;
     }
 
-    PrintNumbers(numb - 1, secondNumb, sum);
+    PrintSumNumbers(numb - 1, secondNumb, sum);
 }
 
 int secondNumber = GetNumber("Введите число M: ");
