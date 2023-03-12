@@ -8,11 +8,11 @@ int GetNumber(string text)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-void PrintNumbers(int numb,int secondNumb, int sum)
+void PrintNumbers(int numb, int secondNumb, int sum)
 {
 
-    if (numb < secondNumb  ) { System.Console.WriteLine("Введите натуральное числа"); return; }
-    if (secondNumb <= 0) { secondNumb = 1;}
+    if (numb < secondNumb) { System.Console.WriteLine("Введите натуральное числа"); return; }
+    if (secondNumb <= 0) { secondNumb = 1; }
     sum += numb;
     if (numb == secondNumb)
     {
@@ -20,10 +20,10 @@ void PrintNumbers(int numb,int secondNumb, int sum)
         return;
     }
 
-    PrintNumbers(numb - 1,secondNumb, sum);
+    PrintNumbers(numb - 1, secondNumb, sum);
 }
 
 int secondNumber = GetNumber("Введите число M: ");
 int number = GetNumber("Введите число N: ");
 int sum = 0;
-PrintNumbers(number,secondNumber, sum);
+PrintNumbers(number, secondNumber, sum);
