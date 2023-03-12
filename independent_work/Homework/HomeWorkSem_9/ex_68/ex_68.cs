@@ -3,17 +3,18 @@
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
+// Ввод текста
 int GetNumber(string text)
 {
     System.Console.WriteLine(text);
     return Convert.ToInt32(Console.ReadLine());
 }
-
+// Вывод ответа
 void AckermanFunction(int m, int n)
 {
     Console.Write($"Ответ: {Ackermann(m, n)}");
 }
-
+// Создание функции Аккермана
 int Ackermann(int m, int n)
 {
     if (m == 0) return n + 1;

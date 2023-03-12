@@ -3,12 +3,13 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
+// Ввод числа
 int GetNumber(string text)
 {
     System.Console.WriteLine(text);
     return Convert.ToInt32(Console.ReadLine());
 }
-
+// Печатаем числа промежутка от N до 1.
 void PrintNumbers(int numb)
 {
     if (numb < 0) { System.Console.WriteLine("Не натуральное число"); }
